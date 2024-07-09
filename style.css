@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #0e0d0d;
     color: white;
 }
 
@@ -27,7 +28,7 @@ html,body{
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 999;
+    z-index: 9999;
     background-color: #0b0b0b;
     padding: 25vh 10vw;
 }
@@ -120,7 +121,6 @@ html,body{
 #page1{
     height:100vh ;
     width: 100%;
-    background-color: #0e0d0d;
 }
 
 #page1 #nav{
@@ -169,16 +169,135 @@ html,body{
     line-height: 7vw;
     
 }
-.hero h2,.hero h3{
+.hero h2{
     font-size: 7vw;
     text-transform: uppercase;
     font-weight: 100;
     line-height: 7vw;
-    
+    border-bottom: .5vw solid white;
+    padding-bottom: 0.8vw;
+    /* transition: all ease 0.3s; */
 }
 
 .hero h2:hover{
     -webkit-text-stroke: 3px white;
     color: transparent;
     font-weight: 500;
+    border-bottom: .5vw solid rgb(19, 18, 18);
+}
+
+
+#page2{
+    width: 100%;
+    height: 100vh;
+    padding-top: 17vh;
+    position: relative;
+
+}
+
+
+ #video-container{
+    height: 65vh;
+    width: 70vw;
+    position: relative;
+    left: 30%;
+    background-image: url(Photography/hunting\ photos\ 1.jpg);
+}
+
+#video-container img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#video-cursor {
+    background-color: orange;
+    height: 8.5vw;
+    width: 8.5vw;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+#video-cursor i{
+    font-size: 2vw;
+    background-color: transparent;
+    color: white;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #1b1919;
+    position: relative;
+}
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    padding: 10vh 0;
+}
+
+#page4-content{
+    width: 72vw;
+    margin-left: 28%;
+    position: relative;
+}
+
+#page4-content h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: 'BatmanForeverAlternate';
+}
+
+#page4-content .underline{
+    height: 2px;
+    width: 90%;
+    background-color: white;
+    margin: 5vw 0 ;
+}
+
+
+#page4-content>p{
+    font-size: 2vw;
+    width: 50%;
+}
+
+
+#page4-flex{
+    display: flex;
+    margin-top: 5vw;
+}
+
+
+#page4-flex img{
+    width: 40%;
+    height: 90vh;
+}
+
+#page4-flex p{
+        font-size: 1.3vw;
+        width: 35%;
+        margin-top: 7vw;
+        margin-left: 2.3vw;
+}
+
+
+#page5{
+    min-height: 100vh;
+    width: 100%;
 }

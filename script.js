@@ -59,8 +59,6 @@ tl.from("#hero1 h1, #hero2 h2, #hero3 h1, #hero4 h1",{
 
 }
 
-
-
 function cursoranimation(){
     document.addEventListener("mousemove",(dets)=>{
         gsap.to("#crsr",{

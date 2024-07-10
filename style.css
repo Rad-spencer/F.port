@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #0e0d0d;
     color: white;
 }
 
 html,body{
     width: 100%;
     height: 100%;
+    background-color: #0e0d0d;
+
 }
 
 #crsr{
@@ -119,7 +120,7 @@ html,body{
 }
 
 #page1{
-    height:100vh ;
+    height:80vh ;
     width: 100%;
 }
 
@@ -167,8 +168,10 @@ html,body{
     text-transform: uppercase;
     font-weight: 100;
     line-height: 7vw;
+    position: relative;
     
 }
+
 .hero h2{
     font-size: 7vw;
     text-transform: uppercase;
@@ -262,6 +265,7 @@ html,body{
     font-size: 7vw;
     text-transform: uppercase;
     font-family: 'BatmanForeverAlternate';
+    position: relative;
 }
 
 #page4-content .underline{
@@ -300,4 +304,113 @@ html,body{
 #page5{
     min-height: 100vh;
     width: 100%;
+    position: relative;
+}
+
+ .elem{
+    /* background-color: rgb(0, 255, 217); */
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: 1vw;
+}
+
+.elem h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px white;
+    font-family: 'BatmanForeverOutline';
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 10px;
+    animation-name: text-anime;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.elem2{
+    /* background-color: rgb(0, 255, 217); */
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: 1vw;
+}
+.elem2 h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px white;
+    font-family: 'BatmanForeverOutline';
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 10px;
+    transform: translateX(calc(-100% - 20px));
+    animation-name: text-anime;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes text-anime{
+    from{
+        transform: translateX(0%)
+    }
+to{
+  transform: translateX(calc(-100% - 20px));
+}
+}
+
+
+
+#footer{
+    height: 80vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding-left:25vw ;
+}
+
+#footer h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: 'BatmanForeverAlternate';
+    /* background-color: blue; */
+    padding-bottom: 3vw;
+    position: relative;
+}
+
+
+
+.underline{
+    height: 2px;
+    width: 84%;
+    background-color:#fff;
+    margin: 2vw 0;
+}
+
+
+#footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+    margin: 3vw;
+}
+
+#footer-div h6{
+    font-size: 1vw;
+    margin-bottom: 1.4vw;
+}
+
+.box{
+    width: 20%;
+}
+
+
+#footer-div h5{
+    font-size: 1.4vw;
+    font-weight: 500;
+    margin: 0.2vh 0;
 }

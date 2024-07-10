@@ -76,4 +76,4 @@ function cursoranimation(){
 
 
 loadingloaderanimation();
-cursoranimation();
+// cursoranimation();
